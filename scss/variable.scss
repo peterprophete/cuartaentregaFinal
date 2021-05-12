@@ -1,0 +1,32 @@
+$font-familyPrincipal: arial, sans-serif;
+
+/*media queries*/
+$min-width-mb-s: 330px;
+$max-width-mb-s: 480px;
+$condition: 700px;
+
+@mixin sizes($font, $color) {
+    font-size: $font;
+    color: $color;
+}
+
+%h2 {
+    font-family: $font-familyPrincipal;
+    text-align: right;
+    padding-right: 10%;
+    text-decoration: underline;
+    letter-spacing: 5px;
+    padding: 50px 100px;
+    margin: 5px;
+    transform: skew(5deg, 10deg);
+    @include sizes(50px, pink);
+
+    @if $condition != 700px {
+        color: red;
+        padding-bottom: 10%;
+        font-size: (50px/2);
+    } @else if $condition == $max-width-mb-s {
+        color: royalblue;
+        font-size: (50px * 2);
+    }
+}

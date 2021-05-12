@@ -1,0 +1,24 @@
+/* Footer*/
+.contactos {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+h5 {
+    color: yellowgreen;
+    font-size: 15px;
+    font-family: 'Monserrat', Arial, Helvetica, sans-serif;
+}
+
+.redes {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+}
+
+.alinear {
+    display: flex;
+    flex-flow: wrap nowrap;
+    justify-content: space-around;
+}

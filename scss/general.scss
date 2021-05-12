@@ -1,0 +1,169 @@
+body {
+    background: linear-gradient(to left, #373b44, #4286f4);
+    margin: 1px;
+    padding: 0px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+p {
+    color: yellowgreen;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 20px;
+    margin-left: 10px;
+}
+
+tr td {
+    border: 1px solid black;
+}
+
+th {
+    border: 1px solid black;
+    background-color: grey;
+    color: #231651;
+}
+
+.listaMenu {
+    background-color: blue;
+}
+
+.resaltador {
+    color: red;
+}
+
+.lore {
+    font-weight: bold;
+    word-spacing: 10px;
+}
+.container-fluid {
+    width: 960px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.container-fluid {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+/* GALERIA DE PRODUCTOS */
+.informaciones {
+    width: 960px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.fotos {
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+.foto {
+    background-color: white;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    min-width: 100px;
+    max-width: 300px;
+    min-height: 100px;
+    max-height: 150px;
+    margin: 2px;
+}
+
+.fotoLive:hover {
+    transform: scale(1.1);
+    background-color: red;
+    border: 2px solid yellow;
+}
+
+.fotos {
+    display: grid;
+    grid-template-columns: 25% 30% 35%;
+    margin-top: 10px;
+}
+.foto {
+    display: grid;
+    padding: 1em;
+}
+
+/*mejor de casa*/
+h2 {
+    font-size: 20px;
+    font-family: 'monserat' sans-serif;
+    color: yellowgreen;
+    text-align: none;
+    text-transform: uppercase;
+}
+
+.produc {
+    width: 960px;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px;
+}
+.fondo {
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.exa {
+    display: flex;
+    background-size: cover;
+    min-width: 100px;
+    max-width: 350px;
+    min-height: 100px;
+    max-height: 150px;
+    margin: 10px;
+}
+
+.equipa {
+    display: flex;
+    justify-items: center;
+}
+
+.fondo {
+    display: grid;
+    grid-template-columns: 25% 30% 35%;
+}
+
+.exa {
+    display: grid;
+    padding: 1em;
+}
+.exa:hover {
+    height: 300px;
+    background-color: red;
+    border: 2px solid yellow;
+}
+
+@media only screen and(max-width:960px) {
+    .informaciones {
+        width: 60%;
+    }
+}
+
+@media only screen and(max-width:968px) {
+    .produc {
+        width: 60%;
+    }
+}
+@media only screen and(max-width:960px) {
+    .container-fluid {
+        width: 60%;
+    }
+}
